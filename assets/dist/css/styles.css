@@ -101,3 +101,29 @@
     max-height: calc(100%);
     max-width: calc(100%);
   }
+  #chatbot-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#toggle-chatbot-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#chatbot-iframe {
+    display: none;
+    position: fixed;
+    bottom: 80px; /* Adjust this value based on button height */
+    right: 20px;
+    width: 300px;
+    height: 500px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
