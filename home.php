@@ -161,4 +161,19 @@ if($_SESSION['login_type'] != 1)
       </div>
         </div>
       </div>
-      
+
+      <div id="chatbot-wrapper">
+    <button id="toggle-chatbot-btn">Chat with Bot</button>
+    <iframe id="chatbot-iframe" src="https://webchat.botframework.com/embed/chatbotatharva-bot?s=DPGjG9jtSLM.3CYLzsFmrej4ME6IsL1JviiFDt75H0OQYWp6o2_vANg"></iframe>
+</div>
+
+      <script>
+      document.getElementById('toggle-chatbot-btn').addEventListener('click', function() {
+    var iframe = document.getElementById('chatbot-iframe');
+    if (iframe.style.display === 'none') {
+        iframe.style.display = 'block';
+    } else {
+        iframe.style.display = 'none';
+    }
+});
+</script>
